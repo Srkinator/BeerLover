@@ -12,9 +12,11 @@ const Header = () => {
                             <p className="nav-link">About</p>
                         </li>
                     </Link>
+                    <Link to= '/favourite'>
                     <li className="nav-item active navfixli2">
                         <p className="nav-link" href="#">Favourites</p>
                     </li>
+                    </Link>
                 </ul>
             </div>
         </nav>

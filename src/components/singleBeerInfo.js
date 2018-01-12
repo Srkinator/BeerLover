@@ -28,7 +28,6 @@ class SingleBeerInfo extends Component {
     }
 
     render() {
-        console.log(this.state.beer);
         return (
             <div className="container singleBeerContainer">
                         <h1>{this.state.beer.name}, {this.state.beer.abv}%</h1>

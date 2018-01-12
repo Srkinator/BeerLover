@@ -27,14 +27,14 @@ class MainFeed extends Component {
                     beers: result
                 });
             });
-        if(search){
+        if (search) {
             fetch(`https://api.punkapi.com/v2/beers?beer_name=${search}`)
-            .then(result => result.json())
-            .then(result => {
-                this.setState({
-                    search: result
+                .then(result => result.json())
+                .then(result => {
+                    this.setState({
+                        search: result
+                    });
                 });
-            });
         }
     }
 
@@ -53,17 +53,22 @@ class MainFeed extends Component {
         });
     }
 
-    handleSearch =(searchedBeer) =>{
+    handleSearch = (searchedBeer) => {
         this.loadBeers(searchedBeer);
     }
+
+    // favouriteClassToggler =() =>{
+    //     let btn = document.getElementsByClassName("tester");
+    //     btn.setAttribute("className", "btn-primary");
+    // }
 
 
 
     render() {
-        if(this.state.search.length>0){
+        if (this.state.search.length > 0) {
             return (
                 <div className="container">
-                    <Search dispatch={this.handleSearch}/>
+                    <Search dispatch={this.handleSearch} />
                     <div className="row beersMain">
                         {this.state.search.map((beer) => {
                             return (
@@ -75,6 +80,7 @@ class MainFeed extends Component {
                                     <Link to={`/beers/${beer.id}`}>
                                         <button type="button" className="btn btn-info">Read More</button>
                                     </Link>
+                                    {/* <button className="btn btn-secondary" type="button">Favourite</button> */}
                                 </div>
                             );
                         })}
@@ -84,7 +90,7 @@ class MainFeed extends Component {
         }
         return (
             <div className="container">
-                <Search dispatch={this.handleSearch}/>
+                <Search dispatch={this.handleSearch} />
                 <div className="row beersMain">
                     {this.state.beers.slice(3, -1).map((beer) => {
                         return (
@@ -96,6 +102,7 @@ class MainFeed extends Component {
                                 <Link to={`/beers/${beer.id}`}>
                                     <button type="button" className="btn btn-info">Read More</button>
                                 </Link>
+                                    {/* <button onClick={this.favouriteClassToggler} type="button" className="btn tester">Favourite</button> */}
                             </div>
                         );
                     })}

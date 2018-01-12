@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
+
 
 class MainFeed extends Component {
     constructor(props) {
@@ -51,7 +53,9 @@ class MainFeed extends Component {
                         <img alt="beer"src={beer.image_url} />
                         <p>{beer.abv}% alc</p>
                         <p>{beer.description.slice(0,150)}...</p>
+                        <Link to={`/beers/${beer.id}`}>
                         <button type="button" className="btn btn-info">Read More</button>
+                        </Link>
                     </div>
             );
         })}

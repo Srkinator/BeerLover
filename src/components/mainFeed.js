@@ -49,7 +49,7 @@ class MainFeed extends Component {
                 {this.state.beers.slice(3,-1).map((beer) => {
             return (
                     <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12" key={beer.id}>
-                        <h4>{beer.name}</h4>
+                        <h3>{beer.name}</h3>
                         <img alt="beer"src={beer.image_url} />
                         <p>{beer.abv}% alc</p>
                         <p>{beer.description.slice(0,150)}...</p>

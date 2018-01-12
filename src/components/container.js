@@ -5,6 +5,8 @@ import MainFeed from './mainFeed';
 import Search from './search';
 import Header from '../common/header';
 import SingleBeerInfo from './singleBeerInfo';
+import Footer from '../common/footer';
+import About from '../common/about';
 
 class Container extends Component {
     render() {
@@ -16,8 +18,9 @@ class Container extends Component {
                     <Redirect exact from="/" to="beers" />
                     <Route exact path="/beers" component={MainFeed} />
                     <Route path="/beers/:id" component={SingleBeerInfo} />
+                    <Route path="/about" component={About} />
                 </Switch>
-                {/* <Footer /> */}
+                <Footer />
             </div>
         );
     }

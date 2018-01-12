@@ -13,7 +13,7 @@ class Container extends Component {
         return (
             <div>
                 <Header />
-                <Search />
+                {/* <Search /> */}
                 <Switch>
                     <Redirect exact from="/" to="beers" />
                     <Route exact path="/beers" component={MainFeed} />

@@ -10,14 +10,14 @@ const Header = () => {
             <a className="navbar-brand" href="#">Beer Lover</a>
 
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul className="navbar-nav mr-auto">
+                <ul className="navbar-nav navfix">
                     <Link to='/about' >
-                        <li className="nav-item active">
-                            <a className="nav-link">About</a>
+                        <li className="nav-item active navfixli1">
+                            <p className="nav-link">About</p>
                         </li>
                     </Link>
-                    <li className="nav-item active">
-                        <a className="nav-link" href="#">Favourites</a>
+                    <li className="nav-item active navfixli2">
+                        <p className="nav-link" href="#">Favourites</p>
                     </li>
                 </ul>
             </div>

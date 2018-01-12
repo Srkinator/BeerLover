@@ -28,3 +28,15 @@ body {
   margin-right: auto;
 }
 
+.search {
+  margin-top: 15%;
+  margin-bottom: 10%;
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.searchInput {
+  width: 80% !important;
+}
+

@@ -51,7 +51,7 @@ class MainFeed extends Component {
                         <img alt="beer"src={beer.image_url} />
                         <p>{beer.abv}% alc</p>
                         <p>{beer.description.slice(0,150)}...</p>
-                        <button type="button" class="btn btn-info">Read More</button>
+                        <button type="button" className="btn btn-info">Read More</button>
                     </div>
             );
         })}

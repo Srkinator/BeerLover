@@ -44,13 +44,14 @@ class MainFeed extends Component {
     render() {
         return (
             <div className="row beersMain">
-                {this.state.beers.map((beer) => {
+                {this.state.beers.slice(3,-1).map((beer) => {
             return (
                     <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12" key={beer.id}>
-                        <h5>{beer.name}</h5>
+                        <h4>{beer.name}</h4>
                         <img alt="beer"src={beer.image_url} />
-                        <p>{beer.abv}</p>
+                        <p>{beer.abv}% alc</p>
                         <p>{beer.description.slice(0,150)}...</p>
+                        <button type="button" class="btn btn-info">Read More</button>
                     </div>
             );
         })}

@@ -7,4 +7,24 @@ body {
 .beersMain img{
   width: 30%;
   height: 40%;
+  margin-bottom: 5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+.beersMain h4 {
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+.beersMain p {
+  text-align: center;
+}
+
+.beersMain button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+

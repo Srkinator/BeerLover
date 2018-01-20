@@ -26,3 +26,47 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.beer-card{
+  word-wrap: break-word;
+  padding: 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  margin: 1% 1%;
+  height: 650px !important;
+
+}
+
+.beer-card:hover{
+  box-shadow: 0 15px 18px 0 rgba(0,0,0,0.27), 0 20px 60px 0 rgba(0,0,0,0.2);
+}
+
+.btn-info:hover {
+    text-decoration: none;
+    text-underline-position: none;
+}
+.btn-info {
+  position: absolute;
+  bottom: 10px;
+  left: 20%;
+}
+
+@media only screen and (max-width: 600px) {
+  .btn-info {
+    position: absolute;
+    bottom: 10px;
+    left: 40%;
+  }
+}
+
+.beersMain {
+  margin-top: 10%;
+}
+
+.footer {
+  margin-top: 5%;
+  bottom: 0 !important;
+}

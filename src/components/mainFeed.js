@@ -87,6 +87,7 @@ class MainFeed extends Component {
             return (
                 <div className="container">
                     <Search dispatch={this.handleSearch} />
+                    <h2>Featured Beers</h2>
                     <div className="row beersMain">
                         {this.state.search.map((beer) => {
                             return (
@@ -109,6 +110,7 @@ class MainFeed extends Component {
         return (
             <div className="container">
                 <Search dispatch={this.handleSearch} />
+                <h2>Featured Beers</h2>
                 <div className="row beersMain">
                     {this.state.beers.slice(3, -1).map((beer) => {
                         return (

@@ -3,6 +3,7 @@ import React from 'react';
 const About = () => {
     return (
         <div className="About">
+          <h1>About</h1>
             <h3>Introduction</h3>
             <p>A micro brew about an ice house sanitizes a pit viper over some air hocky table. The IPA behind the scooby snack tries to seduce the milwakees best. Now and then, a dirt-encrusted broken bottle wastedly satiates a Miller behind a miller light. If a cantankerous Budweiser Select slyly trades baseball cards with a coors light defined by the Hazed and Infused, then a lager over the lover rejoices. For example, a Yuengling of a bottle of beer indicates that a Luna Sea ESB sells a porter to the Heineken.
 </p>

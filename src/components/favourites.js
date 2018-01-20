@@ -17,14 +17,12 @@ class Favourite extends Component {
     setupSearch = () => {
         let beers = JSON.parse(localStorage.getItem("beers"));
         let search = ""
-        console.log(beers.length);
         for (let i = 0; i < beers.length; i++) {
             search += beers[i]
         }
         fetch(`https://api.punkapi.com/v2/beers?ids=${search}`)
             .then(result => result.json())
             .then(result => {
-                console.log(result);
                 this.setState({
                     favbeers: result
                 });
@@ -35,26 +33,10 @@ class Favourite extends Component {
         this.setupSearch();
     }
 
-    renderBeers = () => {
-        return (
-            this.state.favbeers.map((beer) => {
-                return (
-                    <div className="row" key={beer.id}>
-                        <div className="col-lg-4 col-md-6 col-sm-12">
-                            <h5>{beer.name}</h5>
-                            <img alt="beer" src={beer.image_url} />
-                            <p>{beer.abv}</p>
-                            <p>{beer.description}</p>
-                        </div>
-                    </div>
-                );
-            })
-        )
-    }
-
     render() {
         return (
             <div className="container">
+                <h2>Favorite Beers</h2>
                 <div className="row beersMain">
                     {this.state.favbeers.map((beer) => {
                         return (

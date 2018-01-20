@@ -33,7 +33,7 @@ class SingleBeerInfo extends Component {
                         <h1>{this.state.beer.name}, {this.state.beer.abv}%</h1>
                 <div className="row">
                     <div className="col-xs-12 col-sm-6 singleBeerFix">
-                        <img className="singleBeerImg" src={this.state.beer.image_url} />
+                        <img className="single-beer-info-img" src={this.state.beer.image_url} />
                     </div>
                     <div className="col-xs-12 col-sm-6 singleBeerFix">
                         <h4>Description :</h4>

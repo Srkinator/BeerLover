@@ -70,3 +70,18 @@
   margin-top: 5%;
   bottom: 0 !important;
 }
+
+h2{
+  margin-top: 8%;
+  text-align: center;
+
+}
+.single-beer-info-img{
+  width: 40%;
+  height: 600px;
+  text-align: center;
+}
+
+.singleBeerFix {
+  text-align: center;
+}
